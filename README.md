@@ -1,2 +1,0 @@
-# Prankur Gupta
-Personal Website
