@@ -60,6 +60,10 @@ $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
 $border-color               : $lighter-gray;
 
+$sidebar-color              : mix(black,white,10%);
+$menu-option-color          : mix($background-color,black,50%);
+$sidebar-hover-bg-color     : mix($background-color,black,40%);
+$sidebar-hover-text-color   : white;
 $primary-color              : #7a8288;
 $success-color              : #62c462;
 $warning-color              : #f89406;

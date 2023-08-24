@@ -4,8 +4,7 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="http://schema.org/Person">
-
+<div class="sidebar">
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
     	<a href= {{base_path}}><img src="{{ author.avatar }}" alt="{{ author.name }}"></a>
@@ -19,7 +18,21 @@
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
   
-
+  <nav id="site-nav"  class="greedy-nav">
+    <button><div class="navicon"></div></button>
+    <ul>
+      {% for link in site.data.navigation.main %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+          {% else %}
+          {% assign domain = base_path %}
+        {% endif %}
+        <li><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <ul class="hidden-links hidden"></ul>
+  </nav>
+</div>
   <!-- <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
@@ -121,25 +134,3 @@
 {% endif %}
     </ul>
   </div> -->
-
-  <!-- <div class="masthead">
-    <div class="masthead__inner-wrap">
-      <div class="masthead__menu"> -->
-        <nav id="site-nav" class="greedy-nav">
-          <button><div class="navicon"></div></button>
-          <ul>
-            {% for link in site.data.navigation.main %}
-              {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-                {% else %}
-                {% assign domain = base_path %}
-              {% endif %}
-              <li ><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %}
-          </ul>
-           <ul class="hidden-links hidden"></ul>
-        </nav>
-      <!-- </div>
-    </div>
-  </div> -->
-</div>
