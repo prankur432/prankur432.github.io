@@ -215,11 +215,12 @@
   img {
     align-self: center;
     max-width: 175px;
-    border-radius: 50%;
+    border-radius: 100%;
+    border: 1px solid blue;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid blue;
+      
     }
   }
 }
@@ -375,6 +376,14 @@
 .social-media-links {
   padding-top: 20px;
   a{
+    display: inline;
     color: mix(black,white,40%);
+    font-size: 20px;
   }
+  
+  a:hover{
+    color: black;
+    transition: 0.5s;
+  }
+  
 }

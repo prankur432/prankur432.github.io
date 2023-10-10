@@ -11,7 +11,7 @@
     z-index: auto;
       
     @include breakpoint($large) {
-    visibility: hidden;
+    display: none;
     }
     
     h3 {

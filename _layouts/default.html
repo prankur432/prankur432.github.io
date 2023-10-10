@@ -3,7 +3,7 @@ layout: compress
 ---
 
 {% include base_path %}
-
+{% assign author = site.author %}
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
@@ -19,9 +19,6 @@ layout: compress
 
     {{ content }}
 
-    
-
-    {% include scripts.html %}
 
   </body>
 </html>

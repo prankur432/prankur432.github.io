@@ -6,7 +6,11 @@
           {% else %}
           {% assign domain = base_path %}
         {% endif %}
-        <li><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+        {% if link.title == "CV" %}
+            <li><a href="{{ domain }}{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a></li>
+        {% else %}
+            <li><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+        {% endif %}
       {% endfor %}
     </ul>
   </nav>
