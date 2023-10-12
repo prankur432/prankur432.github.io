@@ -216,7 +216,7 @@
     align-self: center;
     max-width: 175px;
     border-radius: 100%;
-    border: 1px solid blue;
+    border: 2px solid rgb(100, 98, 122);
 
     @include breakpoint($large) {
       padding: 5px;
