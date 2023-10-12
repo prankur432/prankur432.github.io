@@ -1,0 +1,54 @@
+jmp:
+  - title: "You Want What You Get: The Effect of Realized Fertility on Fertility Preference"
+    abstract: "Fertility preferences are critical in understanding fertility trends and in making reproductive policies. However, if fertility itself influences preferences, this would complicate its usage. This paper investigates if there exists a causal effect of realized fertility on desired fertility. I exploit the quasi-random occurrence of twins or the birth of a female child at first birth as an instrument for exogenous variation in realized fertility. Using data from 230 rounds of demographic and health surveys from 74 developing countries, I find that having an additional birth causally increases desired fertility by 0.15-0.30. Further, I find the result is unlikely to be driven by experiential learning but can be explained through either a model of reference-dependent preferences or ex-post rationalization. The result has important policy and research implications specifically when using fertility preferences to estimate excess fertility, the need for family planning programs, son preference, or as proxies for intrahousehold bargaining."
+    link: "https://raw.githubusercontent.com/prankur432/public-docs/main/DesiredFertility_Gupta_JMP.pdf"
+  
+publications:
+  - title: "Refugees, Shocks and Cash Transfers: Multidimensional Impacts of a Large One-Time Transfer to Refugees in Uganda"
+    coauthors: "Daniel Stein, Heather Lanthorn, Emmanuel Nshakira-Rukundo and 8 others"
+    journal: "World Development"
+    period: "173, 106339, 2023"
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0305750X23001572"
+
+  - title: "Emergency Cash Transfers for Informal Workers: Impact Evidence from Mexico"
+    coauthors: "Ana Canedo and Raissa Fabregas"
+    journal: "Journal of Public Economics"
+    period: "219, 104820, 2023"
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0047272723000026"
+
+  - title: "Minimum Support Prices in India: Distilling the Facts"
+    coauthors: "Reetika Khera and Sudha Narayanan"
+    journal: "Review of Agrarian Studies"
+    period: "vol. 11, no. 1, 2021"
+    link: "http://ras.org.in/a41ffbc3f42b07f18cd99ef097261c24"
+    policy_brief: "https://www.thehindu.com/opinion/lead/msp-the-factoids-versus-the-facts/article33367929.ece"
+
+  - title: "Casting the Net: India's Public Distribution System after the Food Security Act"
+    coauthors: "Jean Drèze, Reetika Khera and Isabel Pimenta"
+    journal: "Economic and Political Weekly"
+    period: "(special articles section) 2019"
+    wp_link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3177691"
+    policy_brief: "https://www.ideasforindia.in/topics/governance/food-security-act-how-are-indias-poorest-states-faring.html"
+
+working_papers:
+  - title: "Large and unequal life expectancy declines associated with the COVID-19 pandemic in India in 2020"
+    coauthors: "Aashish Gupta, Payal Hathi, Sangita Vyas and 6 others"
+    status: "Revise & Resubmit"
+    journal: "Science Advances"
+    wp_link: "https://osf.io/preprints/socarxiv/8juds"
+
+  - title: "Minimum Support Prices in India and ts impact on crop portfolio"
+    abstract: "this is my abstract and it needs to appear as a button which will change things"
+
+work_in_progress:
+  - title: "WIP 1"
+    coauthors: "Ramsay"
+    journal: "The most Amazing Journal"
+    period: "June, 2012"
+    link: "https://www.google.com"
+
+  - title: "WIP 2"
+    coauthors: "Ramsay"
+    journal: "The most Amazing Journal"
+    period: "June, 2012"
+    link: "https://www.google.com"

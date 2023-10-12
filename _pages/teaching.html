@@ -7,6 +7,18 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<h2>Teaching Assistant, The University of Texas at Austin, 2018-2023</h2>
+<ul>
+{% for ta in site.data.teaching.ut %}
+  <li>
+  <b>{{ta.course}}</b>, (<i>{{ta.semesters}}</i>)
+  </li>
 {% endfor %}
+</ul>
+
+<h2>Teaching Award</h2>
+<ul>
+  <li>
+    Outstanding Teaching Assistant, <i>The University of Texas at Austin</i>, 2022
+  </li>
+</ul>

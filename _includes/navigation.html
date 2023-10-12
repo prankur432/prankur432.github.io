@@ -3,7 +3,7 @@
       {% for link in site.data.navigation.main %}
         {% if link.url contains 'http' %}
           {% assign domain = '' %}
-          {% else %}
+        {% else %}
           {% assign domain = base_path %}
         {% endif %}
         {% if link.title == "CV" %}

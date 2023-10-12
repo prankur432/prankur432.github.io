@@ -21,17 +21,5 @@ main:
   #- title: "Guide"
   #  url: /markdown/
   
-  - title: "ABOUT"
-    url: /about/    
-  
-publications:
-
-  - title: "Effects of X on Y"
-    coauthors: "Ramsay"
-    journal: "The most Amazing Journal"
-    period: "June, 2012"
-    link: "https://www.google.com"
-  
-  - title: "Effects of A on B"
-    journal: "The most Amazing Journal"
-    period: "June, 2012"
+  # - title: "ABOUT"
+  #   url: /about/    

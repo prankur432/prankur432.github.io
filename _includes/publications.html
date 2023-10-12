@@ -1,33 +1,89 @@
 
-<h1>Job Market Paper</h1>
+<h2>Job Market Paper</h2>
+
+{% for publication in site.data.research.jmp %}
+  <b>{{publication.title}}</b><br><a href="{{publication.link }}" target="_blank" rel="noopener noreferrer">(link)</a> <br><br>
+  <i>Abstract</i>: {{publication.abstract}}
+{% endfor %}
+
+
+
+<h2>Publications</h2>
 <ul>
-{% for publication in site.data.navigation.publications %}
-  <li>{{publication.title}}, with {{publication.coauthors}}</li>
+{% for publication in site.data.research.publications %}
+  <li>{{publication.title}}, <i>{{publication.journal}}</i>, {{publication.period}}. <br>
+    {% if {{publication.coauthors}} != nil %} 
+      <i> with</i> {{publication.coauthors}} <br>
+    {% endif %}
+    {% if {{publication.link}} != nil %}
+      <a href="{{publication.link }}" target="_blank" rel="noopener noreferrer">(link)</a> 
+    {% endif %}
+    {% if {{publication.wp_link}} != nil %}
+      <a href="{{publication.wp_link }}" target="_blank" rel="noopener noreferrer">(working paper link)</a>
+    {% endif %}
+    {% if {{publication.policy_brief}} != nil %}
+      <a href="{{publication.wp_link }}" target="_blank" rel="noopener noreferrer">(policy brief)</a> 
+    {% endif %}
+    <br><br>
+  </li>
 {% endfor %}
 </ul>
 
-
-<h1>Publications</h1>
+<h2>Working Papers</h2>
 <ul>
-{% for publication in site.data.navigation.publications %}
-  <li>{{publication.title}}, with {{publication.coauthors}}</li>
+  {% for publication in site.data.research.working_papers %}
+  <li>{{publication.title}}
+    {% if {{publication.status}} != nil %}
+      ,<i> {{publication.status}}</i> at {{publication.journal}}
+    {% endif %}
+    <br>
+    {% if {{publication.coauthors}} != nil %} 
+      <i> with</i> {{publication.coauthors}} <br>
+    {% endif %}
+    <!-- {% if {{publication.abstract}} != nil %} 
+      <button type = "button" class="collapsible"><i> Abstract </i></button>  
+      <div class ="content">
+      <p>{{publication.abstract}}</p>
+      </div>
+      <br>
+    {% endif %} -->
+    {% if {{publication.wp_link}} != nil %}
+      <a href="{{publication.wp_link }}" target="_blank" rel="noopener noreferrer">(working paper link)</a>
+    {% else %}
+      <i>Draft available upon request</i>
+    {% endif %}
+    {% if {{publication.policy_brief}} != nil %}
+      <a href="{{publication.wp_link }}" target="_blank" rel="noopener noreferrer">(policy brief)</a> 
+    {% endif %}
+    <br><br>
+  </li>
 {% endfor %}
 </ul>
 
-<h1>Working Papers</h1>
-<ul>
-{% for publication in site.data.navigation.publications %}
-  <li>{{publication.title}}, with {{publication.coauthors}}</li>
-{% endfor %}
-</ul>
-
-<div class = "publications">
-  <h1>Work in Progress</h1>
+<!-- <div class = "publications">
+  <h2>Work in Progress</h2>
   <ul>
-    {% for publication in site.data.navigation.publications %}
+    {% for publication in site.data.research.work_in_progress %}
       <li>{{publication.title}}, with {{publication.coauthors}}</li>
     {% endfor %}
   </ul>
-</div>
-<i>Italian Random</i>
-<b>Boldly Random</b>
+</div> -->
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+  
