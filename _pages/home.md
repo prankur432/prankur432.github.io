@@ -1,5 +1,6 @@
 ---
 permalink: /
+layout: archive
 title: "Home"
 excerpt: "About me"
 author_profile: true #this is the sidebar argument (author_profile)

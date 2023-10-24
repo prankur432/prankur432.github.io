@@ -1,9 +1,9 @@
 
 .header {
-    
+    background-color: $sidebar-color;
     position: relative;
     padding: 1em 1em 1em;
-    border-bottom: 1px solid blue;
+    border-bottom: 3px solid mix($sidebar-color, black, 60%);
     -webkit-animation: intro 0.3s both;
             animation: intro 0.3s both;
     -webkit-animation-delay: 0.15s;
@@ -24,6 +24,7 @@
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
+    color: $background-color;
     }
 
     button {
@@ -34,7 +35,7 @@
         padding: 0.5em 1em 0.5em 1em;
         border: 0;
         outline: none;
-        background-color: $primary-color;
+        background-color: mix($sidebar-color,black,70%);
         color: #fff;
         cursor:cursor;
       }

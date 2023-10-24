@@ -35,12 +35,19 @@
 }
 
 .page__title {
+  
+  h1 {
+    color: $title-color;
+  }
+
   margin-top: 0;
   line-height: 1;
 
   & + .page__meta {
     margin-top: -0.5em;
   }
+
+  
 }
 
 .page__lead {

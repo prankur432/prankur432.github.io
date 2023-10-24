@@ -54,16 +54,17 @@ $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
-$background-color           : #fff;
+$background-color           : #ffffff;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
 $border-color               : $lighter-gray;
 
-$sidebar-color              : mix(black,white,10%);
-$menu-option-color          : mix($background-color,black,50%);
-$sidebar-hover-bg-color     : mix($background-color,black,40%);
-$sidebar-hover-text-color   : white;
+$sidebar-color              : #6DAFFE;
+$title-color                : mix($sidebar-color, black,70%);
+$menu-option-color          : $background-color;
+$sidebar-hover-bg-color     : $background-color;
+$sidebar-hover-text-color   : $sidebar-color;
 $primary-color              : #7a8288;
 $success-color              : #62c462;
 $warning-color              : #f89406;

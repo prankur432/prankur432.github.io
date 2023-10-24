@@ -65,7 +65,7 @@
   position: relative;
   
   li {
-    border-bottom: 1px solid mix($background-color,black,75%);
+    border-bottom: 1px solid $background-color; //mix($background-color,black,75%)
   }
   a {
     display: block;
@@ -198,8 +198,8 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  padding-top: 5px;
-  width: 36px;
+  //padding-top: 5px;
+  width: 60px;
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -216,12 +216,12 @@
     align-self: center;
     max-width: 175px;
     border-radius: 100%;
-    border: 2px solid rgb(100, 98, 122);
+    border: 1px solid $background-color;
 
     @include breakpoint($large) {
       padding: 5px;
-      
     }
+    
   }
 }
 
@@ -238,15 +238,17 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    color:$background-color;
   }
 }
 
 .author__name {
   margin: 0;
   text-align: left;
-  font-family: $sans-serif;
+  font-family: "Microsoft Yahei",sans-serif;
   font-size: $type-size-5;
-
+  color:$background-color;
+  
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -377,7 +379,7 @@
   padding-top: 20px;
   a{
     display: inline;
-    color: mix(black,white,40%);
+    color: $background-color;
     font-size: 20px;
   }
   
